@@ -207,6 +207,10 @@ msgstr "dirección de correo electrónico"
 msgid "EMAIL_PTRN_DESC"
 msgstr "Ingrese una dirección de correo electrónico válida"
 
+#: client/components/login/login.js:230 client/components/registration/registration.js:161
+msgid "EMAIL_TYPO_ERR"
+msgstr "¿Quisiste decir"
+
 #: client/components/registration/registration.js:496
 msgid "USERNAME_REG_LBL"
 msgstr "Correo electrónico, número de teléfono o nombre de usuario"

@@ -200,6 +200,10 @@ msgstr "Naslov e-pošte"
 msgid "EMAIL_PTRN_DESC"
 msgstr "Naslov veljavne e-pošte"
 
+#: client/components/login/login.js:230 client/components/registration/registration.js:161
+msgid "EMAIL_TYPO_ERR"
+msgstr "Ali ste mislili"
+
 #: client/components/registration/registration.js:496
 msgid "USERNAME_REG_LBL"
 msgstr "Uporabniško ime"

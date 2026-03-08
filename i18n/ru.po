@@ -208,6 +208,10 @@ msgstr "емайл адрес"
 msgid "EMAIL_PTRN_DESC"
 msgstr "Действующий емейл адрес"
 
+#: client/components/login/login.js:230 client/components/registration/registration.js:161
+msgid "EMAIL_TYPO_ERR"
+msgstr "Вы имели в виду"
+
 #: client/components/registration/registration.js:496
 msgid "USERNAME_REG_LBL"
 msgstr "Имя пользователя"

@@ -201,6 +201,10 @@ msgstr "email address"
 msgid "EMAIL_PTRN_DESC"
 msgstr "enter valid email address"
 
+#: client/components/login/login.js:230 client/components/registration/registration.js:161
+msgid "EMAIL_TYPO_ERR"
+msgstr "Did you mean"
+
 #: client/components/registration/registration.js:496
 msgid "USERNAME_REG_LBL"
 msgstr "Username"

@@ -1,7 +1,6 @@
 const BundleAnalyzerPlugin =
   require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 const CompressionPlugin = require("compression-webpack-plugin");
-const BrotliPlugin = require("brotli-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
@@ -81,10 +80,13 @@ module.exports = (env, argv) => {
       }),
     );
     plugins.push(
-      new BrotliPlugin({
-        asset: "[path].br[query]",
-        test: /\.(js|css|html|svg|json)$/,
-        minRatio: 0.7,
+      new CompressionPlugin({
+        filename: "[path][base].br",
+        algorithm: "brotliCompress",
+        compressionOptions: {level: 11},
+        threshold: 10240,
+        minRatio: 0.8,
+        deleteOriginalAssets: false,
       }),
     );
   }
